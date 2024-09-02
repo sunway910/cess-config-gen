@@ -26,7 +26,7 @@ const minerSchema = Joi.object({
   .xor('earningsAcc', 'incomeAccount') // nodeadm use incomeAccount and mineradm use earningsAcc
   .xor('space', 'UseSpace') // nodeadm use space and mineradm use UseSpace
   .xor('UseCpu', 'useCpuCores') // nodeadm use useCpuCores and mineradm use UseCpu
-  .xor('stakingAcc', 'stakerAccount') // nodeadm use stakerAccount and mineradm use stakingAcc
+  .xor('stakingAcc', 'signPhrase') // nodeadm use signPhrase and mineradm use stakingAcc
   // For compatibility: there's one item and there's only one item can be true
 
 module.exports = {
